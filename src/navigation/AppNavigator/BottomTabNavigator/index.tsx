@@ -2,15 +2,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import screens from '@utilities/constants/screens';
 import Homescreen from '@screens/App/Home';
 import ProfileScreen from '@screens/App/Profile';
-import {
-  DUMMY_PROFILE,
-  Percentages,
-  colors,
-} from '@utilities/constants/common';
+import { colors } from '@utilities/constants/common';
 import React from 'react';
 import { tabBar } from '@utilities/constants/labels';
-import { BottomTabIcon } from '@utilities/CommonTypes';
-import { DimensionValue, Image } from 'react-native';
 import { TabBarStyle } from './styles';
 import ReelsScreen from '@screens/App/Reels';
 import ChatScreen from '@screens/App/Chat';
@@ -31,50 +25,50 @@ const BottomTabNavigator = () => {
       <Tab.Screen
         name={screens.home}
         component={Homescreen}
-        // options={{
-        // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
-        // //     focused ? <HomeIcon fill={color} /> : <HomeOutline fill={color} />,
-        //   tabBarLabel: tabBar.home,
-        // }}
+        options={{
+          // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
+          // //     focused ? <HomeIcon fill={color} /> : <HomeOutline fill={color} />,
+          tabBarLabel: tabBar.home,
+        }}
       />
       <Tab.Screen
         name={screens.Reels}
         component={ReelsScreen}
-        // options={{
-        // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
-        // //     focused ? (
-        // //       <CategoryIcon fill={color} />
-        // //     ) : (
-        // //       <CategoryOutlineIcon fill={color} />
-        // //     ),
-        //   tabBarLabel: tabBar.reels,
-        // }}
+        options={{
+          // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
+          // //     focused ? (
+          // //       <CategoryIcon fill={color} />
+          // //     ) : (
+          // //       <CategoryOutlineIcon fill={color} />
+          // //     ),
+          tabBarLabel: tabBar.reels,
+        }}
       />
       <Tab.Screen
         name={screens.Chat}
         component={ChatScreen}
-        // options={{
-        // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
-        // //     focused ? (
-        // //       <OrdersIcon fill={color} />
-        // //     ) : (
-        // //       <OrdersOutlineIcon fill={color} />
-        // //     ),
-        //   tabBarLabel: tabBar.chatchat,
-        // }}
+        options={{
+          // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
+          // //     focused ? (
+          // //       <OrdersIcon fill={color} />
+          // //     ) : (
+          // //       <OrdersOutlineIcon fill={color} />
+          // //     ),
+          tabBarLabel: tabBar.chat,
+        }}
       />
       <Tab.Screen
         name={screens.Search}
         component={SearchScreen}
-        // options={{
-        // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
-        // //     focused ? (
-        // //       <OrdersIcon fill={color} />
-        // //     ) : (
-        // //       <OrdersOutlineIcon fill={color} />
-        // //     ),
-        //   tabBarLabel: tabBar.search,
-        // }}
+        options={{
+          // //   tabBarIcon: ({color, focused, ...rest}: BottomTabIcon) =>
+          // //     focused ? (
+          // //       <OrdersIcon fill={color} />
+          // //     ) : (
+          // //       <OrdersOutlineIcon fill={color} />
+          // //     ),
+          tabBarLabel: tabBar.search,
+        }}
       />
 
       <Tab.Screen

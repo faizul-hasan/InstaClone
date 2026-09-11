@@ -1,8 +1,8 @@
-import AuthNavigator from '@navigation/AuthNavigator';
+import BottomTabNavigator from '@navigation/AppNavigator/BottomTabNavigator';
 import React from 'react';
 
 const MainNavigation = () => {
-  return <AuthNavigator />;
+  return <BottomTabNavigator />;
 };
 
 export default MainNavigation;
