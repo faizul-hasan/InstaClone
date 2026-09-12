@@ -1,9 +1,8 @@
-import {ALIGNMENT} from '@enums/ENUMS';
-import {ReactNode} from 'react';
+import { ALIGNMENT } from '@enums/ENUMS';
+import { ReactNode } from 'react';
 import {
   ColorValue,
   GestureResponderEvent,
-  ImageRequireSource,
   ImageStyle,
   KeyboardTypeOptions,
   NativeSyntheticEvent,
@@ -13,7 +12,7 @@ import {
   TextStyle,
   ViewStyle,
 } from 'react-native';
-import {ResizeMode, Source} from 'react-native-fast-image';
+// import {ResizeMode, Source} from 'react-native-fast-image';
 
 export interface ScreenProps {
   navigation: any;
@@ -34,13 +33,13 @@ export interface userItemProp {
   name?: string;
   id?: number;
 }
-export interface ImageProps {
-  source?: Source | ImageRequireSource;
-  style?: any;
-  resizeMode?: ResizeMode;
-  loaderColor?: ColorValue;
-  loaderSize?: number | 'large' | 'small';
-}
+// export interface ImageProps {
+//   source?: Source | ImageRequireSource;
+//   style?: any;
+//   resizeMode?: ResizeMode;
+//   loaderColor?: ColorValue;
+//   loaderSize?: number | 'large' | 'small';
+// }
 
 export interface CustomButtonProps {
   navigation?: any;
