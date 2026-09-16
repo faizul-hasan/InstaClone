@@ -1,9 +1,9 @@
 export const string = {
   home: 'Home',
-  Login: 'Log in',
+  Login: 'Login',
   SignUp: 'SignUp',
   SignIn: 'SignIn',
-  forgotPassword: 'Forgot password ?',
+  forgotPassword: 'Forgot password?',
   orSignin: 'Or Sign In Using',
   orSignup: 'Or Sign Up Using',
   ADD: 'ADD',
@@ -13,7 +13,6 @@ export const string = {
   UnselectALL: 'Unselect All',
   SeeLess: 'See Less',
   SeeMore: 'See More',
-  CreateAccount: 'Create new account',
 };
 
 export const InputFieldError = {
