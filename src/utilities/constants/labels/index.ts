@@ -1,6 +1,6 @@
 export const placeholder = {
-  Email: 'Type your Email',
-  password: 'Type your password',
+  Email: 'Username,email or mobile number',
+  password: 'Password',
   Confpassword: 'Confirm your password',
   username: 'Email',
   pass: 'password',

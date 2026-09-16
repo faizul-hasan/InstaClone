@@ -72,7 +72,7 @@ export interface CustomInputProps {
   rightViewStyle?: ViewStyle;
   rightIconStyle?: ImageStyle;
   rightIconPress?: Function;
-  inputStyle?: ViewStyle | ViewStyle[];
+  inputStyle?: ViewStyle | ViewStyle[] | undefined;
   placeholder?: string;
   placeholderColor?: ColorValue;
   value?: string;
