@@ -1,7 +1,7 @@
 export const string = {
   home: 'Home',
   Login: 'Log in',
-  SignUp: 'SignUp',
+  SignUp: 'Sign Up',
   SignIn: 'SignIn',
   forgotPassword: 'Forgot password ?',
   orSignin: 'Or Sign In Using',
