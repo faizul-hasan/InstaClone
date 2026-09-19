@@ -178,3 +178,13 @@ export interface ProfileOptionProps {
   title?: string;
   info?: string;
 }
+export interface Story {
+  id: string;
+  username: string;
+  image: string;
+  isYourStory?: boolean;
+}
+export interface StoryItemProps {
+  story: Story;
+  onPress?: (story: Story) => void;
+}
