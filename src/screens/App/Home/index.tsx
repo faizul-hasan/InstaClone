@@ -4,14 +4,14 @@ import { HomeStyles } from './styles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import HomeHeader from '@components/HomeHeader';
 import React from 'react';
-import StoriesComponent from '@components/StoriesComponent';
+import Post from '@components/Post';
 
 const HomeSreen = () => {
   return (
     <SafeAreaView style={HomeStyles.container}>
       <View style={HomeStyles.container}>
         <HomeHeader />
-        <StoriesComponent />
+        <Post />
       </View>
     </SafeAreaView>
   );

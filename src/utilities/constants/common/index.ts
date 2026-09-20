@@ -1,4 +1,4 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 
 export const colors = {
   transparent: 'transparent',
@@ -90,20 +90,29 @@ export const Sizes = {
   size14: 14,
   size15: 15,
   size16: 16,
+  size17: 17,
   size18: 18,
+  size19: 19,
   size20: 20,
+  size21: 21,
   size24: 24,
   size25: 25,
   size26: 26,
+  size28: 28,
   size30: 30,
   size32: 32,
   size35: 35,
+  size38: 38,
   size40: 40,
+  size41: 41,
+  size42: 42,
   size45: 45,
   size50: 50,
+  size60: 60,
   size64: 64,
   size56: 56,
   size57: 57,
+  size58: 58,
   size70: 70,
   size80: 80,
   size90: 90,
@@ -121,6 +130,7 @@ export const Sizes = {
   size300: 300,
   size400: 400,
   size500: 500,
+  size600: 600,
   NULL: null,
   UNDEFINED: undefined,
 };

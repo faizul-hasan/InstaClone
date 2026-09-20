@@ -188,3 +188,26 @@ export interface StoryItemProps {
   story: Story;
   onPress?: (story: Story) => void;
 }
+export interface IconProps {
+  size?: number;
+  strokeWidth?: number;
+}
+export interface Post {
+  id: string;
+  username: string;
+  profileImage: string;
+  postImage: string;
+
+  likes: string;
+  comments: string;
+  reposts: string;
+  shares: string;
+
+  likedBy: string;
+  likedByCount: string;
+
+  caption: string;
+}
+export interface PostActionsProps {
+  post: Post;
+}
