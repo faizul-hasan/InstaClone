@@ -13,6 +13,7 @@ export enum ALIGNMENT {
   SMALL = 'small',
   LARGE = 'large',
   UNDERLINE = 'underline',
+  RELATIVE = 'relative',
   ABSOLUTE = 'absolute',
   DOUBLE = 'double',
   CONTAIN = 'contain',

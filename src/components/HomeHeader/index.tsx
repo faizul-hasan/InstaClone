@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Image, TouchableOpacity, View } from 'react-native';
 import React, { useState } from 'react';
 import { headerStyle } from './styles';
 import AddIcon from '@assets/Icons/AddIcon';
@@ -20,7 +20,14 @@ const HomeHeader = () => {
         />
       </TouchableOpacity>
       <TouchableOpacity style={headerStyle.txtContainer}>
-        <Text style={headerStyle.instaTxt}>Instagram</Text>
+        <Image
+          source={require('@assets/Images/InstaWordmark.png')}
+          style={{
+            height: 56,
+            width: 160,
+            resizeMode: 'cover',
+          }}
+        />
         <DownArrow strokeWidth={2.25} />
       </TouchableOpacity>
       <TouchableOpacity style={{ flexDirection: 'row' }}>
