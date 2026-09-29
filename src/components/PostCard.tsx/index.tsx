@@ -14,7 +14,7 @@ import RepostIcon from '@assets/Icons/RepostIcon';
 import { colors } from '@utilities/constants/common';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-const PostCard = ({ post }: PostActionsProps) => {
+const PostCard = ({ post, onCommentsPress }: PostActionsProps) => {
   const { width } = useWindowDimensions();
   const insets = useSafeAreaInsets();
 
@@ -72,7 +72,7 @@ const PostCard = ({ post }: PostActionsProps) => {
 
       {/* ACTIONS */}
 
-      <PostActions post={post} />
+      <PostActions post={post} onCommentsPress={onCommentsPress} />
 
       {/*LIKED BY*/}
 
