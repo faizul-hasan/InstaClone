@@ -1,4 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
 import { View } from 'react-native';
 import { HomeStyles } from './styles';
 import { SafeAreaView } from 'react-native-safe-area-context';

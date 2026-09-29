@@ -9,7 +9,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import { PostActionStyles } from './styles';
 import { colors } from '@utilities/constants/common';
 
-const PostActions = ({ post }: PostActionsProps) => {
+const PostActions = ({ post, onCommentsPress }: PostActionsProps) => {
   const [onClick, setOnClick] = useState<boolean>(false);
   return (
     <View style={PostActionStyles.container}>
@@ -23,14 +23,15 @@ const PostActions = ({ post }: PostActionsProps) => {
         >
           {onClick ? (
             <HeartIcon
-              strokeWidth={0}
+              strokeWidth={2}
               fill={colors.red}
+              stroke={colors.red}
               onPress={() => setOnClick(false)}
               height={25}
               width={25}
             />
           ) : (
-            <HeartIcon strokeWidth={2} />
+            <HeartIcon height={25} width={25} strokeWidth={2} />
           )}
 
           <Text style={PostActionStyles.count}>{post.likes}</Text>
@@ -38,7 +39,11 @@ const PostActions = ({ post }: PostActionsProps) => {
 
         {/* COMMENT */}
 
-        <TouchableOpacity activeOpacity={0.7} style={PostActionStyles.action}>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          style={PostActionStyles.action}
+          onPress={onCommentsPress}
+        >
           <CommentIcon />
 
           <Text style={PostActionStyles.count}>{post.comments}</Text>

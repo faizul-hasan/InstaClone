@@ -8,7 +8,7 @@ import {
   NativeSyntheticEvent,
   ReturnKeyTypeOptions,
   StyleProp,
-  TextInputSubmitEditingEventData,
+  TextInputSubmitEditingEvent,
   TextStyle,
   ViewStyle,
 } from 'react-native';
@@ -81,10 +81,10 @@ export interface CustomInputProps {
   returnKeyType?: ReturnKeyTypeOptions;
   secureTextEntry?: boolean;
   onSubmitEditing?: (
-    event: NativeSyntheticEvent<TextInputSubmitEditingEventData>,
+    event: NativeSyntheticEvent<TextInputSubmitEditingEvent>,
   ) => void;
   onEndEditing?: (
-    event: NativeSyntheticEvent<TextInputSubmitEditingEventData>,
+    event: NativeSyntheticEvent<TextInputSubmitEditingEvent>,
   ) => void;
   autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters' | undefined;
   multiline?: boolean;
@@ -210,4 +210,5 @@ export interface Post {
 }
 export interface PostActionsProps {
   post: Post;
+  onCommentsPress: () => void;
 }
